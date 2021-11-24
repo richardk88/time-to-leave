@@ -14,7 +14,6 @@
         "february": "Febrero",
         "fri": "Vie",
         "january": "Enero",
-        "july": "Julio",
         "june": "Junio",
         "march": "Marzo",
         "may": "Mayo",
@@ -26,10 +25,11 @@
         "sun": "Dom",
         "thu": "Jue",
         "tue": "Mar",
-        "wed": "Mié"
+        "wed": "Wed"
     },
     "$FlexibleDayCalendar": {
         "current-day": "Ir a dia actual",
+        "extra": "extra",
         "day-total": "Total del día",
         "entry": "Entrada",
         "entry-removal-confirmation": "¿Estás seguro de querer remover la ultima fila?",
