@@ -40,9 +40,11 @@ jobs:
       - name: '        Tests - Mocha'
         run: npm run test:mocha
         shell: bash
+        if: matrix.os == 'ubuntu-latest'
       - name: '        Copy mocha results'
         run: |
           cp coverage_jest/coverage-final.json COV_REPORT/coverage-final-mocha.json
+        if: matrix.os == 'ubuntu-latest'
       - name: '        CodeCov'
         uses: codecov/codecov-action@v2
         with:
