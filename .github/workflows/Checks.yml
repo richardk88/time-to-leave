@@ -49,6 +49,6 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: COV_REPORT/coverage-final-jest.json
+          files: COV_REPORT/coverage-final-*.json
           name: codecov-${{ matrix.os }}
           verbose: true
