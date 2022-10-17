@@ -17,7 +17,8 @@ describe('Application launch', function()
     {
         this.app = new Application({
             path: electronPath,
-            args: [path.join(__dirname, '..')]
+            args: [path.join(__dirname, '..')],
+            waitTimeout: 10000
         });
         await this.app.start();
     });
