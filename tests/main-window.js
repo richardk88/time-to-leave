@@ -12,9 +12,9 @@ const weekDay = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frida
 
 describe('Application launch', function()
 {
+    this.timeout(20000);
     beforeEach(async function()
     {
-        this.timeout(25000);
         this.app = new Application({
             path: electronPath,
             args: [path.join(__dirname, '..')]
